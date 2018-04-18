@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TSF</title>
+
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Candal|Alegreya+Sans">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+ 
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+  <!--Navigation bar-->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">TheSparksFoundation</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#feature">Our Mission.</a></li>
+          <li><a href="#About">About.</a></li>
+          <li><a href="#Team">OutTeam.</a></li>
+          <li><a href="#contact">Contact.</a></li>
+          <li><a href="#" data-target="#login" data-toggle="modal">Sign in</a></li>
+          <li class="btn-trial"><a href="#footer">Donate</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--/ Navigation bar-->
+  <!--Modal box-->
+  <div class="modal fade" id="login" role="dialog">
+    <div class="modal-dialog modal-sm">
+
+      <!-- Modal content no 1-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title text-center form-title">Login</h4>
+        </div>
+        <div class="modal-body padtrbl">
+
+          <div class="login-box-body">
+            <p class="login-box-msg">Sign in</p>
+            <div class="form-group">
+              <form name="" id="loginForm">
+                <div class="form-group has-feedback">
+                  <!----- username -------------->
+                  <input class="form-control" placeholder="Username" id="loginid" type="text" autocomplete="off" />
+                  <span style="display:none;font-weight:bold; position:absolute;color: red;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginid"></span>
+                  <!---Alredy exists  ! -->
+                  <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                </div>
+                <div class="form-group has-feedback">
+                  <!----- password -------------->
+                  <input class="form-control" placeholder="Password" id="loginpsw" type="password" autocomplete="off" />
+                  <span style="display:none;font-weight:bold; position:absolute;color: grey;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginpsw"></span>
+                  <!---Alredy exists  ! -->
+                  <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="checkbox icheck">
+                      <label>
+                                <input type="checkbox" id="loginrem" > Remember Me
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-xs-12">
+                    <button type="button" class="btn btn-green btn-block btn-flat" onclick="userlogin()">Sign In</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!--/ Modal box-->
+  <!--Banner-->
+  <div class="banner">
+    <div class="bg-color">
+      <div class="container">
+        <div class="row">
+          <div class="banner-text text-center">
+            <div class="text-border">
+              <h2 class="text-dec">The Sparks Foundation</h2>
+            </div>
+            <div class="intro-para text-center quote">
+              <p class="big-text">...inspiring, innovating, integrating</p>
+              <div class="row">
+		<div class="col-md-auto">
+	    <div class="quote-wrap quote-style-3">
+   <blockquote>
+        <p> "It takes a village to raise a child."     
+
+        </p>
+   </blockquote>
+   <div class="quote-attribution">
+        <p class="quote-author">-an old african says</p>
+        
+    </div>
+</div>
+</div>
+	  </div> 
+	  
+			  
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/ Banner-->
+  
+  <!--Feature-->
+  <section id="feature" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="header-section text-center">
+          <h2>Our Mission</h2>
+          <p>To <span> inspire </span>students, help them <span> innovate </span> and let them <span> integrate </span> to build the next generation humankind.</p>
+          <hr class="bottom-line">
+        </div>
+        <div class="feature-info">
+          <div class="fea">
+            <div class="col-md-4">
+              <div class="heading pull-right">
+                <h4>Inspire</h4>
+                <p>...to inspire, motivate and to encourage students to learn, create and help to build a better society.</p>
+              </div>
+              
+            </div>
+          </div>
+          <div class="fea" >
+            <div class="col-md-4">
+              <div class="heading pull-right">
+                <h4>Innovate</h4>
+                <p>...to teach new ways of thinking, to innovate and solve the problems on their own.</p>
+              </div>
+              
+            </div>
+          </div>
+          <div class="fea">
+            <div class="col-md-4">
+              <div class="heading pull-right">
+                <h4>Integrate</h4>
+                <p>...to let the students integrate and help each other and do well together</p>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ feature-->
+ 
+    
+ 
+  <!--objectives-->
+  
+  <section id="objectives" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="header-section text-center">
+          <h2>How we do it?</h2>
+          
+          <hr class="bottom-line">
+		  
+        </div>
+        <div class="col-md-4 col-sm-6" style="padding-bottom:20px;">
+          <div class="service-box text-center">
+            
+            <div class="icon-text">
+              <h4 class="ser-text">Events</h4>
+			  <p> We organize events, allowing students to learn from the masters in their fields. <br> Get inspired through stories and workshops. we show them feasibility of big dreams.</p>
+            </div>
+          </div>
+        </div>
+         <div class="col-md-4 col-sm-6">
+          <div class="service-box text-center">
+            
+            <div class="icon-text">
+              <h4 class="ser-text">Mentorship</h4>
+			  <p> We help Students and enable them to move forward, get unstuck from any unfavorable situation<br> We keep an alternative channel open always for them , when school and people around are not enough. </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="service-box text-center">
+            
+            <div class="icon-text">
+              <h4 class="ser-text">Support</h4>
+			  <p> we connect them to available resources. <br> We support students when there is none available.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+	  <div class="row">
+        
+        <div class="col-md-6 col-sm-6">
+          <div class="service-box text-center" >
+            
+            <div class="icon-text">
+              <h4 class="ser-text">Scholarships</h4>
+			  <p> We provide financial asistance to maritorious and deserving students. <br> We provide prizes, motivating students to bring out their best.</p>
+            </div>
+          </div>
+        </div>
+         <div class="col-md-6 col-sm-6">
+          <div class="service-box text-center">
+            
+            <div class="icon-text">
+              <h4 class="ser-text">Community</h4>
+			  <p> We have build a community to share knowledge, helping each other.<br> We encourage asking for help and let inner desire drive students to success. </p>
+            </div>
+          </div>
+        </div>
+       
+	  </div> 
+    </div>
+  </section>
+  <!--/ objectives -->
+  
+  <!--About-->
+  <section id="About" class="section-padding">
+    <div class="container">
+                 <div class="row justify-content-md-center align-items-center">
+                        <div class="col-md-12">
+                            <h1 >Who Are We<span>.</span></h1>
+
+                            <hr>           
+
+                            <p >The Sparks Foundation is a charitable organization running in india and singapore, and expanding.<br>
+							Our mission is to inspire students , let them integrate and help them innovate to build the better humankind.
+                                
+							</p>
+                        </div>
+	             </div>
+	             
+				 <div class="row justify-content-md-center align-items-center">
+                        <div class="col-md-6">
+                            <h3 >How old are we.</h3> 
+
+                            <p>
+                                The Sparks Foundation is a startup we started with basic charity endeavors under different names in the education sector. about a year ago, we launched a full spectrum of our operations under the formal name of The Sparks Foundation. 
+							</p>
+                        </div>
+	             
+	             
+				 
+                        <div class="col-md-6">
+                             <h3>Our Goals.</h3>
+
+                             <p >Ensure money is not the showstopper.<br> Use a little money to drive bigger results.
+                             </p>  
+                        </div>
+                 </div>
+            </div>
+  </section>
+  <!--/ About-->
+  
+  
+  
+  <!-- members-->
+  <section id="Team" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="header-section text-center">
+          <h2>Meet Our Core Team</h2>
+        
+          <hr class="bottom-line">
+        </div>
+         
+		 
+		 <ul class="list-group">
+  
+
+  
+  <li class="list-group-item " style="background-color:lavender;">Ashish Kaushik (IIT Delhi, IIM Ahmedabad, London Business School)</li>
+  <li class="list-group-item " style="background-color:azure;">Miranda Jenkins (London Business School, Goldman Sachs)</li>
+  <li class="list-group-item " style="background-color:aliceblue;">Priya Sengupta (IIT Kharagpur, IIM Lucknow)</li>
+  <li class="list-group-item " style="background-color:papayewhip;">Nedir Boudriga (Director, Standard Chartered, Singapore)</li>
+  <li class="list-group-item " style="background-color:seashell;">Dhanshree Nimje (IIT Delhi, IIM Bangalore, Royal Bank of Scotland)</li>
+  <li class="list-group-item " style="background-color:ivory;">Anna Góralczyk (National University of Singapore)</li>
+  <li class="list-group-item " style="background-color:beige;">Jaz Athenia Chua (INSEAD, Singapore)</li>
+  <li class="list-group-item " style="background-color:linen;">Priyesh Kumar (IIT Delhi, National University of Singapore, Visa Inc.)</li>
+  <li class="list-group-item " style="background-color:whitesmoke;">Tanwi Kaushik (Cornell University, National University of Singapore)</li>
+  <li class="list-group-item " style="background-color:oldlace;">Pranjal Dubey (Co-Founder, Xaltius, National University of Singapore)</li>
+</ul>
+</ul>
+		 
+		 
+		 
+		 
+		 
+		 
+      </div>
+    </div>
+  </section>
+  <!--/ members-->
+  
+ 
+  <!--Contact-->
+  <section id="contact" class="section-padding" >
+    <div class="container" >
+      <div class="row">
+        <div class="header-section text-center">
+          <h2>Contact Us</h2>
+          
+          <hr class="bottom-line">
+        </div>
+        <div id="sendmessage">Your message has been sent. Thank you!</div>
+        <div id="errormessage"></div>
+        <form action="" method="post" role="form" class="contactForm">
+          <div class="col-md-6 col-sm-6 col-xs-6 left">
+            <div class="form-group">
+              <input type="text" name="name" class="form-control form" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <div class="validation"></div>
+            </div>
+          
+
+          
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+              <div class="validation"></div>
+            </div>
+			<!-- Button -->
+            <button type="submit" id="submit" name="submit" class="form contact-form-button light-form-button oswald light">SEND EMAIL</button>
+          </div>
+		  
+
+          
+        </form>
+         <div class="col-md-6 col-sm-6 col-xs-6 right">
+		  
+
+                    <h4 style="color:black;font-size:150%;">Contact Numbers:</h4>
+			        <p ><h3 style="color:#57595B;">Mobile: 7276842745</h3> 
+                    <h3 style="color:#57595B;">Email:adisaps8@gmail.com</h3>
+					<h3 style="color:#57595B;">Address: </h3>
+			        </p>
+		 </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Contact-->
+  <!--Footer-->
+  <footer id="footer" class="footer">
+    <div class="container text-center">
+      <h3> We Will Contact You </h3>
+      
+      <form class="mc-trial row">
+        <div class="form-group col-md-3 col-md-offset-2 col-sm-4">
+          <div class=" controls">
+            <input name="name" placeholder="Enter Your Name" class="form-control" type="text">
+          </div>
+        </div>
+        <!-- End email input -->
+        <div class="form-group col-md-3 col-sm-4">
+          <div class=" controls">
+            <input name="EMAIL" placeholder="Enter Your email" class="form-control" type="email">
+          </div>
+        </div>
+        <!-- End email input -->
+        <div class="col-md-2 col-sm-4">
+          <p>
+            <button name="submit" type="submit" class="btn btn-block btn-submit">
+            Submit <i class="fa fa-arrow-right"></i></button>
+          </p>
+        </div>
+      </form>
+	   
+	   <div class="row">
+		<div class="col-md-auto">
+	    <div class="quote-wrap quote-style-3">
+   <blockquote>
+        <p> "You have not lived today until you have done something for someone who can never repay you."     
+
+        </p>
+   </blockquote>
+   <div class="quote-attribution">
+        <p class="quote-author">John Bunyan</p>
+        
+    </div>
+</div>
+</div>
+	  </div> 
+	  
+	  
+      <!-- End newsletter-form -->
+      <ul class="social-links">
+        <li><a href="#link"><i class="fa fa-twitter fa-fw"></i></a></li>
+        <li><a href="#link"><i class="fa fa-facebook fa-fw"></i></a></li>
+        <li><a href="#link"><i class="fa fa-google-plus fa-fw"></i></a></li>
+        
+        <li><a href="#link"><i class="fa fa-linkedin fa-fw"></i></a></li>
+      </ul>
+     </div>
+    </div>
+  </footer>
+  <!--/ Footer-->
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="contactform/contactform.js"></script>
+
+</body>
+
+</html>
